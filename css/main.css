@@ -68,6 +68,7 @@ section {
 	padding-right: 0;
 	overflow: hidden;
 	background-color: black;
+	clear: right;
 }
 
 .nav img {
@@ -86,7 +87,7 @@ section {
   filter: opacity(.2);
 }
 
-.work-nav {
+.text-nav {
 	color: white;
 	position: absolute;
   top: 32%;
@@ -95,6 +96,40 @@ section {
 	font-weight: bold;
 	font-family: 'Oleo Script', cursive;
 }
+
+main {
+	clear: both;
+}
+
+.work {
+	height: 400px;
+}
+
+h3 {
+	font-family: 'Oleo Script', cursive;
+	text-align: center;
+	padding-top: 50px;
+	margin: 0;
+}
+
+.proj-wrapper {
+	margin-top: 70px;
+}
+
+.project img {
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
+	display: block;
+	margin: 0 auto;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.project:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 
 footer {
 	height: 600px;
