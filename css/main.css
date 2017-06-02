@@ -59,28 +59,41 @@ li a {
 	color: #3cb371;
 }
 
+section {
+	margin: 0 20px;
+}
+
 .nav {
 	height: 350px;
+	padding-right: 0;
+	overflow: hidden;
+	background-color: black;
 }
 
-.work {
-	background-image: url('../images/ng-15320.jpg');
-	background-size: cover;
+.nav img {
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
+	-webkit-filter: opacity(.6);
+	filter: opacity(.6);
 }
 
-.skills {
-	background-image: url('../images/michael-jordan.jpg');
-	background-size: cover;
+.nav:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+	-webkit-filter: opacity(.2);
+  filter: opacity(.2);
 }
 
-.about {
-	background-image: url('../images/simon.jpg');
-	background-size: cover;
-}
-
-.code {
-	background-image: url('../images/goran-ivos.jpg');
-	background-size: cover;
+.work-nav {
+	color: white;
+	position: absolute;
+  top: 32%;
+  left: 42%;
+	font-size: 70px;
+	font-weight: bold;
+	font-family: 'Oleo Script', cursive;
 }
 
 footer {
