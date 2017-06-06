@@ -7,6 +7,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Convergence|Oleo+Script" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/main.css" />
 		<script src="javascripts/jquery.min.js"></script>
@@ -31,19 +33,19 @@
 					<h2 class="text-nav"><span>Work</span></h2>
 			</div>
 			</a>
-			<a href="#">
+			<a href="#skills">
 			<div class="skills nav col-md-6">
 					<img src="images/michael-jordan.jpg" height="100%" width="100%"/>
 					<h2 class="text-nav"><span>Skills</span></h2>
 			</div>
 			</a>
-			<a href="#">
+			<a href="#about">
 			<div class="about nav col-md-6">
 					<img src="images/dan-gold-223935.jpg" height="100%" width="100%"/>
 					<h2 class="text-nav"><span>About</span></h2>
 			</div>
 			</a>
-			<a href="#">
+			<a href="#code">
 			<div class="code nav col-md-6">
 					<img src="images/goran-ivos.jpg" height="100%" width="100%"/>
 					<h2 class="text-nav"><span>Code</span></h2>
@@ -54,24 +56,28 @@
 		<main>
 			<section class="work">
 			<a name="work"></a>
-			<h3>Work</h3>
+			<div class="section-header">
+				<div class="line col-md-5"></div>
+				<div class="section-title col-md-2"><h3>Work</h3></div>
+				<div class="line col-md-5"></div>
+			</div>
 			<div class="proj-wrapper">
 				<div class="project col-md-4">
-					<a href="#">
+					<a href="https://github.com/rtsaunders19/Austin_Recycles">
 					<img src="images/recycle.png" height="200px" width="300px"/>
 						<h2 class="rec proj-title"><span>Can I Recycle This?</span><h2>
 						<p class="rec-desc proj-desc">React Native, Redux, firebase</p>
 					</a>
 				</div>
 				<div class="project col-md-4">
-					<a href="#">
+					<a href="https://github.com/rtsaunders19/healthconnect">
 					<img src="images/health_connect.png" height="200px" width="300px"/>
 					<h2 class="health proj-title"><span>Health Connect</span><h2>
 					<p class="health-desc proj-desc">jQuery, Node.js, MongoDB, Auth0</p>
 					</a>
 				</div>
 				<div class="project col-md-4">
-					<a href="#">
+					<a href="https://rtsaunders19.github.io/11-or-20/starter-code/">
 					<img src="images/11_or_20.png" height="200px" width="300px"/>
 					<h2 class="eleven proj-title"><span>11 or 20?</span><h2>
 					<p class="eleven-desc proj-desc">HTML, CSS, jQuery</p>
@@ -79,8 +85,83 @@
 				</div>
 			</div>
 			</section>
-			<section class="skills">
-
+			<section class="skills-section">
+			<a name="skills"></a>
+			<div class="section-header">
+				<div class="line col-md-5"></div>
+				<div class="section-title col-md-2"><h3>Skills</h3></div>
+				<div class="line col-md-5"></div>
+			</div>
+			<div class="skills-wrapper">
+				<div class="col-md-4">
+					<ul>
+						<li>HTML & CSS</li>
+						<li>Javascript & jQuery</li>
+						<li>Node.js & RESTful APIs</li>
+						<li>MongoDB</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>ReactJS</li>
+						<li>React Native</li>
+						<li>AngularJS</li>
+						<li>Express</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>Git & Github</li>
+						<li>AJAX</li>
+						<li>Bootstrap</li>
+						<li>Socket.io</li>
+					</ul>
+				</div>
+			</div>
+			</section>
+			<section class="about-section">
+				<a name="about"></a>
+				<div class="section-header">
+					<div class="line col-md-5"></div>
+					<div class="section-title col-md-2"><h3>About</h3></div>
+					<div class="line col-md-5"></div>
+				</div>
+				<div class="about-wrapper">
+					<div class="stats col-md-4">
+						<h4>Education</h4>
+						<p>General Assembly Web Development Immersive - 2017</p>
+						<p>University of North Carolina at Chapel Hill - 2012-2016</p>
+						<h4>Hobbies</h4>
+						<ul>
+							<li>Classical & jazz guitar</li>
+							<li>Basketball, Tennis, Running</li>
+							<li>Water sports</li>
+							<li>Zelda</li>
+							<li>Drinking good beer</li>
+						</ul>
+						<h4>Hometown</h4>
+						<p>Charlotte, NC</p>
+					</div>
+					<div class="profile col-md-4">
+						<div class="prof-pic">
+							<img src="images/rob.png" alt="" />
+						</div>
+					</div>
+					<div class="about-text">
+						Hi I'm Rob Saunders, a web developer that loves working with creative people and contributing to innovative ideas where my unique perspective and expertise adds value. As someone with a background in classical guitar, where self discipline and perfectionism are a must, I find passion in the intricacies and practice of writing maintainable, dynamic code. When I'm building an application I will always ask why certain features are included so that I can fully understand the product that I am making, which allows me to more creatively fill in the gaps left by UX Designers and Project Managers.
+					</div>
+				</div>
+			</section>
+			<section class="code-section">
+				<a name="code"></a>
+				<div class="section-header">
+					<div class="line col-md-5"></div>
+					<div class="section-title col-md-2"><h3>Code</h3></div>
+					<div class="line col-md-5"></div>
+				</div>
+				<div class="code-wrapper">
+					<a href="https://github.com/rtsaunders19/almost_an_almostIncreasingSequence/blob/master/almostIncreasingSequence/almostIncreasingSequence.js">Almost_Increasing_Sequence</a>
+				</div>
 			</section>
 		</main>
 
