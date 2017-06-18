@@ -17,12 +17,12 @@ h1 {
 }
 
 .icons {
-	float: right;
-	margin: 16px 70px 0 0;
+	float: left;
+	margin: 16px 0 0 470px;
 }
 
 header li {
-	float: right;
+	float: left;
 	display: inline-block;
 	list-style-type: none;
 	margin: 0 20px;
@@ -59,9 +59,58 @@ header li a {
 	color: #3cb371;
 }
 
+.hamburger {
+	float: right;
+	position: absolute;
+	right: 20px;
+	top: 12px;
+}
+
+.sidenav {
+    height: 40%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+		opacity: .2;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*
 section {
 	margin: 0 20px;
 }
+*/
 
 .nav {
 	height: 295px;
@@ -120,11 +169,6 @@ main {
 
 .section-header {
 	height: 100px;
-}
-
-.line {
-	height: 80px;
-	border-bottom: 2px black solid;
 }
 
 h3 {
@@ -217,6 +261,7 @@ h3 {
 
 .skills-section {
 	height: 620px;
+	background-color: #f0f0e0
 }
 
 .skills-wrapper {
@@ -265,7 +310,6 @@ h4 {
 	height: 250px;
 	width: 300px;
 	border-radius: 40px;
-	border: 2px solid black;
 	margin-right: 40px;
 }
 
@@ -276,6 +320,7 @@ h4 {
 
 .code-section {
 	height: 620px;
+	background-color: #efefef;
 }
 
 .code-wrapper {

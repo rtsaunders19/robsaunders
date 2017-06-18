@@ -15,17 +15,27 @@
 		<script src="javascripts/main.js" charset="utf-8"></script>
 	</head>
 	<body>
-
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#work">Work</a>
+			<a href="#skills">Skills</a>
+			<a href="#about">About</a>
+			<a href="#code">Code</a>
+		</div>
 		<header>
 			<h1>Rob Saunders </h1>
 			<p class="web"> &#123Web Developer&#125 </p>
 			<ul class="icons">
-					<a class="git-symbol" href="https://github.com/rtsaunders19"><li class="git"><i class="fa fa-github" aria-hidden="true"></i></li></a>
-					<a class="link-symbol" href="https://www.linkedin.com/in/rob-saunders/"><li class="link"><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-					<a class="medium-symbol" href="https://medium.com/@rtsaunders19"><li class="medium"><i class="fa fa-medium" aria-hidden="true"></i></li></a>
+					<a target="_blank" class="git-symbol" href="https://github.com/rtsaunders19"><li class="git"><i class="fa fa-github" aria-hidden="true"></i></li></a>
+					<a target="_blank" class="link-symbol" href="https://www.linkedin.com/in/rob-saunders/"><li class="link"><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+					<a target="_blank" class="medium-symbol" href="https://medium.com/@rtsaunders19"><li class="medium"><i class="fa fa-medium" aria-hidden="true"></i></li></a>
 					<a class="email-symbol" href="#"><li class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></li></a>
 			</ul>
+			<div class="hamburger">
+
+			</div>
 		</header>
+		<div id="content">
 		<section>
 			<a href="#work">
 			<div class="nav col-md-6">
@@ -57,9 +67,9 @@
 			<section class="work">
 			<a name="work"></a>
 			<div class="section-header">
-				<div class="line col-md-5"></div>
+				<div class="line-left col-md-5"></div>
 				<div class="section-title col-md-2"><h3>Work</h3></div>
-				<div class="line col-md-5"></div>
+				<div class="line-right col-md-5"></div>
 			</div>
 			<div class="proj-wrapper">
 				<div class="project col-md-4">
@@ -88,9 +98,9 @@
 			<section class="skills-section">
 			<a name="skills"></a>
 			<div class="section-header">
-				<div class="line col-md-5"></div>
+				<div class="line-left col-md-5"></div>
 				<div class="section-title col-md-2"><h3>Skills</h3></div>
-				<div class="line col-md-5"></div>
+				<div class="line-right col-md-5"></div>
 			</div>
 			<div class="skills-wrapper">
 				<div class="col-md-4">
@@ -122,9 +132,9 @@
 			<section class="about-section">
 				<a name="about"></a>
 				<div class="section-header">
-					<div class="line col-md-5"></div>
+					<div class="line-left col-md-5"></div>
 					<div class="section-title col-md-2"><h3>About</h3></div>
-					<div class="line col-md-5"></div>
+					<div class="line-right col-md-5"></div>
 				</div>
 				<div class="about-wrapper">
 					<div class="stats col-md-4">
@@ -144,7 +154,7 @@
 					</div>
 					<div class="profile col-md-4">
 						<div class="prof-pic">
-							<img src="images/rob.png" alt="" />
+							<img src="images/pppppp.png" alt="" />
 						</div>
 					</div>
 					<div class="about-text">
@@ -155,15 +165,21 @@
 			<section class="code-section">
 				<a name="code"></a>
 				<div class="section-header">
-					<div class="line col-md-5"></div>
+					<div class="line-left col-md-5"></div>
 					<div class="section-title col-md-2"><h3>Code</h3></div>
-					<div class="line col-md-5"></div>
+					<div class="line-right col-md-5"></div>
 				</div>
 				<div class="code-wrapper">
-					<a href="https://github.com/rtsaunders19/almost_an_almostIncreasingSequence/blob/master/almostIncreasingSequence/almostIncreasingSequence.js">Almost_Increasing_Sequence</a>
+					<ul>
+						<li><a target="_blank" href="https://github.com/rtsaunders19/almost_an_almostIncreasingSequence/tree/master/shapeArea">shapeArea</a></li>
+						<li><a target="_blank" href="https://github.com/rtsaunders19/almost_an_almostIncreasingSequence/blob/master/almostIncreasingSequence">almostIncreasingSequence</a></li>
+						<li><a target="_blank" href="https://github.com/rtsaunders19/almost_an_almostIncreasingSequence/tree/master/matrixElementsSum">matrixElementsSum</a></li>
+						<li><a href="#">allLongestStrings</a></li>
+					</ul>
 				</div>
 			</section>
 		</main>
+		</div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -173,7 +189,15 @@
 			</div>
 
 		<!-- Scripts -->
+	<script type="text/javascript">
+	function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+	}
 
+	function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
 
 	</body>
 </html>
