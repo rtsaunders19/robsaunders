@@ -179,8 +179,12 @@ h3 {
 	font-size: 50px;
 }
 
-.proj-wrapper {
+.row1 {
 	margin-top: 70px;
+}
+
+.row2 {
+	margin-top: 20px;
 }
 
 .project img {
@@ -257,6 +261,28 @@ h3 {
 .eleven-desc {
 	top: 50%;
   left: 35%;
+}
+
+.sanic {
+	top: 30%;
+	left: 37%;
+	text-decoration: none;
+	color: blue;
+}
+
+.sanic-desc {
+	top: 53%;
+	left: 25%;
+}
+
+.game {
+	top: 70%;
+	left: 30%;
+}
+
+.start-game {
+	top: 78%;
+	left: 15%;
 }
 
 .skills-section {
