@@ -22,7 +22,7 @@
 			<a href="#about">About</a>
 			<a href="#code">Code</a>
 		</div>
-		<header>
+		<header class="sticky-header">
 			<h1>Rob Saunders </h1>
 			<p class="web"> &#123Web Developer&#125 </p>
 			<ul class="icons">
@@ -32,7 +32,6 @@
 					<a class="email-symbol" href="#"><li class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></li></a>
 			</ul>
 			<div class="hamburger">
-
 			</div>
 		</header>
 		<div id="content">
@@ -64,8 +63,8 @@
 		</section>
 
 		<main>
+		<a name="work"></a>
 			<section class="work">
-			<a name="work"></a>
 			<div class="row1">
 				<div class="project col-md-4">
 					<a target="_blank" href="https://github.com/rtsaunders19/Austin_Recycles">
@@ -97,13 +96,6 @@
 						<p class="sanic-desc proj-desc">ReactJS, Socket.io, MongoDB</p>
 						<a target="_blank" class="game proj-desc" href="http://sanicland.herokuapp.com">Click this to go to game</a>
 						<a target="_blank" class="start-game proj-desc" href="http://sanicland.herokuapp.com/admin">Click this to go to admin page to start game</a>
-					</a>
-				</div>
-				<div class="project col-md-4">
-					<a target="_blank" href="">
-					<img src="images/health_connect.png" height="200px" width="300px"/>
-					<h2 class="health proj-title"><span>Health Connect</span><h2>
-					<p class="health-desc proj-desc">jQuery, Node.js, MongoDB, Auth0</p>
 					</a>
 				</div>
 				</div>
@@ -197,6 +189,21 @@
 	function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 	}
+
+	$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
 	</script>
 
 	</body>

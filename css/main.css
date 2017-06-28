@@ -1,6 +1,14 @@
 header {
-	height: 35px;
 	margin-bottom: 30px;
+}
+
+.sticky-header {
+	width: 100%;
+	z-index: 100;
+	position: fixed;
+	height: 63px;
+	background-color: white;
+
 }
 
 h1 {
@@ -126,6 +134,11 @@ section {
 	transition: all 0.7s;
 	-webkit-filter: opacity(.6);
 	filter: opacity(.6);
+}
+
+#content {
+	height: 100%;
+	padding-top: 63px;
 }
 
 .skills img {
