@@ -164,7 +164,7 @@ main {
 }
 
 .work {
-	height: 620px;
+	padding-top: 1px;
 }
 
 .section-header {
@@ -181,10 +181,11 @@ h3 {
 
 .row1 {
 	margin-top: 70px;
+	height: 310px;
 }
 
 .row2 {
-	margin-top: 20px;
+	height: 310px;
 }
 
 .project img {
@@ -286,12 +287,13 @@ h3 {
 }
 
 .skills-section {
-	height: 620px;
+	height: 700px;
 	background-color: #f0f0e0
 }
 
 .skills-wrapper {
 	margin-top: 70px;
+	padding-top: 100px;
 }
 
 .skills-wrapper .col-md-4 ul {
@@ -303,19 +305,18 @@ h3 {
 .skills-wrapper .col-md-4 ul li {
 	padding: 15px 0;
 	border: 2px black solid;
-	margin: 30px 0;
+	margin: 50px 0;
 	border-radius: 20px;
 	font-weight: bold;
+	font-size: 20px;
 }
 
-
-
 .about-section {
-	height: 550px;
+	height: 700px;
 }
 
 .about-wrapper {
-	margin-top: 70px;
+	padding-top: 190px;
 	font-family: 'Dosis', sans-serif;
 }
 
@@ -345,12 +346,13 @@ h4 {
 }
 
 .code-section {
-	height: 620px;
+	height: 700px;
 	background-color: #efefef;
 }
 
 .code-wrapper {
-	margin: 70px;
+	margin-left: 100px;
+	padding-top: 100px;
 }
 
 footer {
