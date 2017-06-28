@@ -25,6 +25,7 @@
 		<header class="sticky-header">
 			<h1>Rob Saunders </h1>
 			<p class="web"> &#123Web Developer&#125 </p>
+			<p class="loading"> Loading... </p>
 			<ul class="icons">
 					<a target="_blank" class="git-symbol" href="https://github.com/rtsaunders19"><li class="git"><i class="fa fa-github" aria-hidden="true"></i></li></a>
 					<a target="_blank" class="link-symbol" href="https://www.linkedin.com/in/rob-saunders/"><li class="link"><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
@@ -34,6 +35,7 @@
 			<div class="hamburger">
 			</div>
 		</header>
+		<div id="body">
 		<div id="content">
 		<section>
 			<a href="#work">
@@ -178,10 +180,19 @@
 
 					</footer>
 
-			</div>
+		</div>
+
 
 		<!-- Scripts -->
 	<script type="text/javascript">
+
+	$('#body').css('opacity', 0);
+	$()
+	$(window).load(function() {
+  	$('#body').css('opacity', 1);
+		$('.loading').text('');
+	});
+
 	function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
 	}
