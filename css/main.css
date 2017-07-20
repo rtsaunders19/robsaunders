@@ -1,3 +1,4 @@
+
 header {
 	margin-bottom: 30px;
 }
@@ -21,16 +22,16 @@ h1 {
 	float: left;
 	margin: 23px 20px 0 20px;
 	font-family: 'Courier New';
-	font-size: 20px
+	font-size: 20px;
 }
 
 .icons {
-	float: left;
-	margin: 16px 0 0 310px;
+	position: absolute;
+	top: 14px;
+	left: 65%;
 }
 
 header li {
-	float: left;
 	display: inline-block;
 	list-style-type: none;
 	margin: 0 20px;
@@ -66,59 +67,6 @@ header li a {
 .medium-symbol {
 	color: #3cb371;
 }
-
-.hamburger {
-	float: right;
-	position: absolute;
-	right: 20px;
-	top: 12px;
-}
-
-.sidenav {
-    height: 40%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 30%;
-    right: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-		opacity: .2;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-/*
-section {
-	margin: 0 20px;
-}
-*/
 
 .nav {
 	height: 295px;
@@ -176,6 +124,8 @@ main {
 	clear: both;
 }
 
+/* Work Section */
+
 .work {
 	padding-top: 1px;
 }
@@ -208,7 +158,6 @@ h3 {
 	display: block;
 	margin: 0 auto;
 	border-radius: 15px;
-	opacity: .8;
 }
 
 .project:hover img {
@@ -218,16 +167,14 @@ h3 {
 }
 
 .proj-title {
-	position: absolute;
-  top: 26%;
-  left: 30%;
+	text-align: center;
 	font-size: 22px;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .proj-desc {
-	position: absolute;
+	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
 	text-decoration: none;
@@ -241,6 +188,7 @@ h3 {
 .project:hover .proj-desc {
 	visibility: visible;
   opacity: 1;
+	text-decoration: none;
 }
 
 .rec {
@@ -249,8 +197,7 @@ h3 {
 }
 
 .rec-desc {
-	top: 53%;
-  left: 25%;
+
 }
 
 .health {
@@ -259,43 +206,34 @@ h3 {
 }
 
 .health-desc {
-	top: 53%;
-  left: 22%;
+
 }
 
 .eleven {
-	top: 23%;
-	left: 42%;
 	font-family: 'Oleo Script', cursive;
 	color: black;
 }
 
 .eleven-desc {
-	top: 50%;
-  left: 35%;
+
 }
 
 .sanic {
-	top: 30%;
-	left: 37%;
 	text-decoration: none;
 	color: blue;
 }
 
 .sanic-desc {
-	top: 53%;
-	left: 25%;
+
 }
 
-.game {
-	top: 70%;
-	left: 30%;
+.game, .start-game {
+	text-align: center;
+	margin-bottom: 0px;
 }
 
-.start-game {
-	top: 78%;
-	left: 15%;
-}
+
+/* Skills Section */
 
 .skills-section {
 	height: 700px;
@@ -321,6 +259,8 @@ h3 {
 	font-weight: bold;
 	font-size: 20px;
 }
+
+/* About Section */
 
 .about-section {
 	height: 700px;
@@ -355,6 +295,8 @@ h4 {
 	line-height: 30px;
 	font-size: 15px;
 }
+
+/* Code section */
 
 .code-section {
 	height: 700px;

@@ -15,13 +15,6 @@
 		<script src="javascripts/main.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#work">Work</a>
-			<a href="#skills">Skills</a>
-			<a href="#about">About</a>
-			<a href="#code">Code</a>
-		</div>
 		<header class="sticky-header">
 			<h1>Rob Saunders </h1>
 			<p class="web"> &#123Web Developer&#125 </p>
@@ -96,8 +89,8 @@
 					<img src="images/sanicland.png" height="200px" width="300px"/>
 						<h2 class="sanic proj-title"><span>Sanic Land</span><h2>
 						<p class="sanic-desc proj-desc">ReactJS, Socket.io, MongoDB</p>
-						<a target="_blank" class="game proj-desc" href="http://sanicland.herokuapp.com">Click this to go to game</a>
-						<a target="_blank" class="start-game proj-desc" href="http://sanicland.herokuapp.com/admin">Click this to go to admin page to start game</a>
+						<a target="_blank" class="proj-desc" href="http://sanicland.herokuapp.com"><p class="game">Click this to go to game</p></a>
+						<a target="_blank" class="proj-desc" href="http://sanicland.herokuapp.com/admin"><p class="start-game">Click this to go to admin page to start game</p></a>
 					</a>
 				</div>
 				</div>
@@ -110,23 +103,23 @@
 						<li>HTML & CSS</li>
 						<li>Javascript & jQuery</li>
 						<li>Node.js & RESTful APIs</li>
-						<li>MongoDB</li>
+						<li>ReactJS</li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<ul>
-						<li>ReactJS</li>
 						<li>React Native</li>
-						<li>Mocha & Chai</li>
+						<li>Redux</li>
+						<li>MongoDB</li>
 						<li>Bootstrap & Semantic UI</li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<ul>
-						<li>Python w/ Flask</li>
 						<li>Git & Github</li>
+						<li>Firebase</li>
+						<li>Mocha & Chai</li>
 						<li>AJAX</li>
-						<li>Socket.io</li>
 					</ul>
 				</div>
 			</div>
@@ -193,14 +186,6 @@
   	$('#body').css('opacity', 1);
 		$('.loading').text('');
 	});
-
-	function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-	}
-
-	function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-	}
 
 	$(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
