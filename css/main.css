@@ -27,13 +27,7 @@ h1 {
 .icons {
 	position: absolute;
 	top: 14px;
-	left: 65%;
-}
-
-@media only screen and (max-width: 500px) {
-	.icons {
-		position: static;
-	}
+	left: 64%;
 }
 
 header li {
@@ -297,14 +291,14 @@ h4 {
 }
 
 .about-text {
-	line-height: 30px;
+	line-height: 27px;
 	font-size: 15px;
 }
 
 /* Code section */
 
 .code-section {
-	height: 700px;
+	height: 300px;
 	background-color: #efefef;
 }
 
