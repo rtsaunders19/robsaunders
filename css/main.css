@@ -226,6 +226,15 @@ h3 {
 
 }
 
+.rescue {
+	text-decoration: none;
+	color: black;
+}
+
+.rescueMap {
+	border: 1px black solid;
+}
+
 .game, .start-game {
 	text-align: center;
 	margin-bottom: 0px;
